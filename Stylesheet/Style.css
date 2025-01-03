@@ -1,0 +1,363 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+@font-face {
+    font-family: 'savarek';
+    src: url(/Assets/fonts/seravek/Seravek_Basic/@font-face/5403db4e1a69d1dc66c1390eaca099d8.ttf) format('truetype'),
+         url(/Assets/fonts/seravek/Seravek_Basic/@font-face/5403db4e1a69d1dc66c1390eaca099d8.woff) format('woff'),
+         url(/Assets/fonts/seravek/Seravek_Basic/@font-face/5403db4e1a69d1dc66c1390eaca099d8.woff2) format('woff2')
+}
+
+@font-face {
+    font-family: "Noah Grotesque Bold";
+    src: url("https://db.onlinewebfonts.com/t/ee309d198ce5f0c7ea45a27149ef7286.eot");
+    src: url("https://db.onlinewebfonts.com/t/ee309d198ce5f0c7ea45a27149ef7286.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/ee309d198ce5f0c7ea45a27149ef7286.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/ee309d198ce5f0c7ea45a27149ef7286.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/ee309d198ce5f0c7ea45a27149ef7286.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/ee309d198ce5f0c7ea45a27149ef7286.svg#Noah Grotesque Bold")format("svg");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    top: 0;
+    right: 0;
+    left: 0px;
+    width: 100%;
+    height: 64px;
+    display: flex;
+    position: fixed;
+    background-color:white;
+    border-bottom: 1px solid seashell;
+    z-index: 1;
+}
+
+.logo-container {
+    display: inline-flex;
+    align-content: center;
+    align-items: center;
+}
+
+.logo-container img {
+    height: 42px;
+    width: auto;
+    margin-left: 24px;
+}
+
+.logo-text {
+    font-family: 'savarek';
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo-text span {
+    font-family: Arial, sans-serif;
+    color: grey;
+    font-weight: normal;
+}
+
+.nav, .terms {
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    padding-right: 24px;
+}
+
+.nav {
+    align-content: center;
+}
+
+.terms {
+    align-content : right;
+}
+
+.nav-list, .terms-list {
+    list-style: none;
+    display: flex;
+    align-content: end;
+    gap: 16px;
+    font-family: 'roboto';
+}
+
+.nav-list li,
+.terms-list li {
+    margin: 0 0px;
+}
+
+.nav-list a,
+.terms-list a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.nav-list a {
+    font-size: 1rem;
+    font-weight: bolder;
+    color: #4a4949;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.terms-list a {
+    font-size: small;
+    font-weight: normal;
+    color: #30A9DE;
+}
+
+.section1 {
+    margin-top: 64px;
+    width: 100%;
+    background-color: #d4d2d2;
+    display: flex;
+}
+
+.section1 img {
+    width: 60%;
+    height: auto;
+    margin: 32px 24px;
+}
+
+.banner {
+    align-items: left;
+    align-content: center;
+}
+
+.banner h2 {
+    font-family: "Noah Grotesque Bold";
+    font-weight: bolder;
+    font-size: 52px;
+    line-height: 1;
+    color: #4A4A4A;
+}
+
+.banner p {
+    margin-top: -10px;
+    font-family: "Noah Grotesque Bold";
+    font-size: 24px;
+    color: #4A4A4A;
+}
+
+.banner button {
+    padding: 8px 140px;
+    font-family: "Noah Grotesque Bold";
+    font-size: large;
+    color: white;
+    background-color: #4A4A4A;
+}
+
+.section2,
+.section4-child {
+    width: 100%;
+    display: inline-flex;
+}
+
+.container,
+.container4 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+}
+
+.main-content,
+.main-content4 {
+    flex: 3;
+}
+
+.image-section,
+.image-section4 {
+    width: 100%;
+    display: flex;
+    padding: 32px 24px;
+}
+
+.image-section img {
+    width: 100%;
+}
+
+.image-section4 video {
+    width: 100%;
+}
+
+.text-section {
+    padding-left: 24px;
+}
+
+.text-section h1 {
+    font-family: 'roboto';
+    font-size: 3em;
+    letter-spacing: 2.5px;
+    margin: 0;
+    color: #4A4A4A;
+}
+
+.text-section h3 {
+    font-family: 'roboto';
+    font-size: 1.5em;
+    margin: 0;
+    color: #4A4A4A;
+}
+
+.text-section p {
+    margin-top: 24px;
+    margin-bottom: 32px;
+    font-family: Helvetica, sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5;
+    color: #4A4A4A;
+}
+
+.right-side,
+.right-side4 {
+    margin-left: 50px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding-top: 16px;
+    background-color: white;
+    border-left: 1px solid #DEE0E0;
+}
+
+.card,
+.card4 {
+    border-radius: 1px;
+    display: flex;
+    border-bottom: 1px solid #DEE0E0;
+    transition: background-color  0.2s ease-in 0.1s;
+    
+}
+
+.card:hover {
+    background-color: #D8D8D8 ;
+}
+
+.card img {
+    padding: 16px;
+    width: 35%;
+    height: auto;
+}
+
+.card-text {
+    align-content: center;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.card-text h3 {
+    font-family: 'roboto';
+    font-size: 1.5em;
+    color: #4A4A4A;
+    padding: 0;
+    margin: 0;
+}
+
+.card-text p {
+    font-family: 'Artifakt Element';
+    font-size: 1em;
+    line-height: 2;
+    color: #4A4A4A;
+    padding: 8px 0px;
+}
+
+.card-text a {
+    font-family: bahnschrift;
+    text-decoration: none;
+    color: #408AE1;
+}
+
+.section3,
+.section4 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section3 {
+    background-color: #EAEBEC;
+}
+
+.section3 h1,
+.section4 h1 {
+    font-family: 'roboto';
+    font-size: 3em;
+    color: #4A4A4A;
+    margin: 32px 0;
+}
+
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 32px;
+    margin-left: 72px;
+    margin-right: 72px;
+    gap: 32px;
+}
+
+.linkpad {
+    display: none;
+}
+
+.classes {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.classes img {
+    width: 300px;
+    height: auto;
+}
+
+.class-text {
+    margin-left: 16px;
+    color: #4A4A4A;
+}
+
+.class-text h2 {
+    font-family: 'roboto';
+    font-size: 1.5em;
+    margin-top: 16px;
+}
+
+.class-text h3 {
+    font-family: 'artifakt element';
+    font-size: 1em;
+    font-weight: 300;
+    margin: 8px 0;
+}
+
+.class-text p {
+    font-family: 'artifakt element';
+    font-size: 1em;
+    font-weight: 300;
+    margin-bottom: 24px;
+}
+
+.section4 {
+    background-color: white;
+    border-bottom: 1px solid #4A4A4A ;
+}
+
+footer {
+    display: inline-flex;
+    width: 100%;
+    background-color: #282C37;
+}
+
+footer p {
+    margin-left: 24px;
+    margin-top: 16px;
+    margin-bottom: 60px;
+    font-family: 'roboto';
+    font-size: small;
+    color: #DDDCDC;
+}
+
